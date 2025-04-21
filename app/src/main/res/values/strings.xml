@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">cst-338-project-2-group-9</string>
+    <string name="leaf_it_to_me">Leaf It To Me!</string>
+    <string name="login">Login</string>
+    <string name="create_an_account">Create an Account</string>
 </resources>
