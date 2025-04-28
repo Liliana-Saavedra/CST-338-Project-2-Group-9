@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
         insertPredefinedUsers();
 
         binding.loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
+
             public void OnClick(View v) { verifyUser(); }
         });
     }

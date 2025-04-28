@@ -27,7 +27,7 @@ public interface UserDAO {
         @Query("DELETE FROM "+ UserDatabase.USER_TABLE)
         void deleteAll();
 
-        //@Query("SELECT * FROM users WHERE userId)
+        @Query("SELECT * FROM users WHERE userId)
         // LiveData<User> getUserByUserId(int userId);
 
     }
