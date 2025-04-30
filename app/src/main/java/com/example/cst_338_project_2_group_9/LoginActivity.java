@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 import com.example.cst_338_project_2_group_9.databinding.ActivityLoginBinding;
 import com.example.cst_338_project_2_group_9.entities.User;
+import com.example.cst_338_project_2_group_9.typeConverters.AppDatabase;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -23,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         binding = LoginActivityBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        db = Database.getInstance(this);
+        db = AppDatabase.getInstance(this);
         insertPredefinedUsers();
 
         binding.loginButton.setOnClickListener(new View.OnClickListener()) {
