@@ -7,4 +7,9 @@
     <string name="password">password</string>
     <string name="username">username</string>
     <string name="welcome_login">Welcome Login</string>
+    <string name="create_user_id">Create User ID</string>
+    <string name="create_password">Create Password</string>
+    <string name="veriy_password">Veriy Password</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="create_account">Create Account</string>
 </resources>

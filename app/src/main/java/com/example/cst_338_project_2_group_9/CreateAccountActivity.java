@@ -19,7 +19,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         binding = ActivityCreateaccountBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.createAccountButton.setOnClickListener(new View.OnClickListener() {
+        binding.createAccButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {createAccount();}
         });
