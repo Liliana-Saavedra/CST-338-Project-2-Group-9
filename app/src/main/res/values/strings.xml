@@ -3,4 +3,8 @@
     <string name="leaf_it_to_me">Leaf It To Me!</string>
     <string name="login">Login</string>
     <string name="create_an_account">Create an Account</string>
+    <string name="login_button">login button</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="welcome_login">Welcome Login</string>
 </resources>
