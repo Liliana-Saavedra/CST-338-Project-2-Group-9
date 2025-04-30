@@ -1,9 +1,16 @@
 package com.example.cst_338_project_2_group_9;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
+import android.content.Context;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
+import com.example.cst_338_project_2_group_9.databinding.ActivityLoginBinding;
+import com.example.cst_338_project_2_group_9.entities.User;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -19,8 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         db = Database.getInstance(this);
         insertPredefinedUsers();
 
-        binding.loginButton.setOnClickListener(new View.OnClickListener() {
-
+        binding.loginButton.setOnClickListener(new View.OnClickListener()) {
             public void OnClick(View v) { verifyUser(); }
         });
     }
@@ -61,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
     private void toastMaker(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
     }
 
     public static Intent intentFactory(Context context) {
