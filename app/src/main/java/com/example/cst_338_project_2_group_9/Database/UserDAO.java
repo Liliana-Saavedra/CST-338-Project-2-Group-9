@@ -8,6 +8,7 @@ import androidx.room.Query;
 import com.example.cst_338_project_2_group_9.entities.User;
 
 import java.util.List;
+
 @Dao
 public interface UserDAO {
     @Insert
@@ -29,3 +30,4 @@ public interface UserDAO {
     User getUserByUsername(String username);
 
     }
+
