@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Cst338project2group9"
         tools:targetApi="31">
         <activity
+            android:name=".LandingPage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLandingPage"
+            android:exported="false" />
+        <activity
             android:name=".PlantMaintenanceActivity"
             android:exported="false" />
         <activity

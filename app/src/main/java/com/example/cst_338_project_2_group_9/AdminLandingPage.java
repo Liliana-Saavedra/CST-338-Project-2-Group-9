@@ -10,13 +10,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class LandingPage extends AppCompatActivity {
+public class AdminLandingPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_landing_page);
+        setContentView(R.layout.activity_admin_landing_page);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -24,6 +24,6 @@ public class LandingPage extends AppCompatActivity {
         });
     }
     public static Intent intentFactory(Context context) {
-        return new Intent(context, LandingPage.class);
+        return new Intent(context, AdminLandingPage.class);
     }
 }
