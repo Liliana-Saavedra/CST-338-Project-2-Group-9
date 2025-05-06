@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.createAccButton.setOnClickListener(v -> {
-            startActivity(CreateAccountActivity.intentFactory(getApplicationContext()));
+            startActivity(CreateAccountActivity.createAccountIntentFactory(getApplicationContext()));
             finish();
         });
     }
