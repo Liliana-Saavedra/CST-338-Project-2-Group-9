@@ -2,47 +2,52 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#C7D99C"
+    tools:context=".CreateAccountActivity">
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/createUserIDEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/create_userid"
+        android:text="@string/create_user_id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/createPasswordEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/create_passoword"
+        android:text="@string/create_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/createUserIDEditText"
+        tools:ignore="TextFields" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/verifyPasswordEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/verify_passoword"
+        android:text="@string/veriy_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/createPasswordEditText"
+        tools:ignore="TextFields" />
 
     <TextView
         android:id="@+id/textView"
@@ -50,19 +55,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:text="@string/create_new_account"
-        android:textSize="35dp"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/createAccButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="@string/create_account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/verifyPasswordEditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
