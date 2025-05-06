@@ -6,17 +6,17 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Context;
-import android.util.Log;
-
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
+import android.content.Context;
+
+import com.example.cst_338_project_2_group_9.Database.UserDAO;
 import com.example.cst_338_project_2_group_9.entities.User;
 import com.example.cst_338_project_2_group_9.databinding.ActivityLoginBinding;
 import com.example.cst_338_project_2_group_9.typeConverters.AppDatabase;
 
 import java.util.List;
+
 
 public class LoginActivity extends AppCompatActivity {
     ActivityLoginBinding binding;
@@ -49,7 +49,6 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        // Execute on background thread
         new Thread(() -> {
             User user = db.userDAO().getUserByUsername(username);
             runOnUiThread(() -> {
@@ -59,9 +58,9 @@ public class LoginActivity extends AppCompatActivity {
                                 .putString("username", user.getUsername())
                                 .apply();
                         if (user.isAdmin()) {
-                            startActivity(AdminLandingPage.intentFactory(getApplicationContext()));
+                            startActivity(AdminLandingPage.AdminLandingPageIntentFactory(getApplicationContext()));
                         } else {
-                            startActivity(LandingPage.intentFactory(getApplicationContext()));
+                            startActivity(PlantMaintenanceActivity.intentFactory(getApplicationContext()));
                         }
                         finish();
                     } else {

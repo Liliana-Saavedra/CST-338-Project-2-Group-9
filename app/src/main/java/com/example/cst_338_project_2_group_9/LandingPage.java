@@ -23,7 +23,7 @@ public class LandingPage extends AppCompatActivity {
             return insets;
         });
     }
-    public static Intent intentFactory(Context context) {
+    public static Intent landingPageIntentFactory(Context context) {
         return new Intent(context, LandingPage.class);
     }
 }

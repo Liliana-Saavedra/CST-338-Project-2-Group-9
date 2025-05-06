@@ -7,4 +7,35 @@
     <string name="password">password</string>
     <string name="username">username</string>
     <string name="welcome_login">Welcome Login</string>
+    <string name="succulent_care">
+    <b>Succulent Care Guide:</b>\n\n
+    • <b>Light:</b> Bright, direct sunlight (4-6 hours daily)\n
+    • <b>Water:</b> Every 2-3 weeks (let soil dry completely)\n
+    • <b>Soil:</b> Well-draining cactus mix\n
+    • <b>Tip:</b> Avoid getting water on leaves to prevent rot
+</string>
+
+    <string name="tree_care">
+    <b>Tree Care Guide:</b>\n\n
+    • <b>Water:</b> Deep watering weekly (more when young)\n
+    • <b>Pruning:</b> Remove dead branches in late winter\n
+    • <b>Fertilizer:</b> Slow-release in early spring\n
+    • <b>Tip:</b> Mulch around base to retain moisture
+</string>
+
+    <string name="bush_care">
+    <b>Bush Care Guide:</b>\n\n
+    • <b>Water:</b> 1-2 times per week (more in heat)\n
+    • <b>Pruning:</b> Shape after flowering season\n
+    • <b>Sun:</b> 4-6 hours daily (varies by species)\n
+    • <b>Tip:</b> Leave space between bushes for air flow
+</string>
+
+    <string name="grass_care">
+    <b>Grass Care Guide:</b>\n\n
+    • <b>Water:</b> 1 inch per week (early morning)\n
+    • <b>Mowing:</b> Keep 3-4 inches tall\n
+    • <b>Fertilize:</b> 3-4 times per growing season\n
+    • <b>Tip:</b> Leave clippings as natural fertilizer
+</string>
 </resources>
