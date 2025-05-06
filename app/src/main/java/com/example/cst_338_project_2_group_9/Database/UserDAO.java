@@ -29,5 +29,10 @@ public interface UserDAO {
     @Query("SELECT * FROM users WHERE username = :username")
     User getUserByUsername(String username);
 
-    }
+    @Query("SELECT COUNT(*) FROM users")
+    int getUserCount();
+
+    @Insert
+    void insertAll(User... users);
+}
 

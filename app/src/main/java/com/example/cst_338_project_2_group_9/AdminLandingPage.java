@@ -23,7 +23,7 @@ public class AdminLandingPage extends AppCompatActivity {
             return insets;
         });
     }
-    public static Intent intentFactory(Context context) {
+    public static Intent AdminLandingPageIntentFactory(Context context) {
         return new Intent(context, AdminLandingPage.class);
     }
 }

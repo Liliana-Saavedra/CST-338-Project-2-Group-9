@@ -12,6 +12,7 @@ import java.util.Objects;
         private String username;
         private String password;
         private boolean isAdmin;
+        private long lastLogin;
 
     public User(String password, String username, boolean isAdmin) {
         this.password = password;
@@ -49,6 +50,14 @@ import java.util.Objects;
 
     public void setAdmin(boolean admin) {
         isAdmin = admin;
+    }
+
+    public long getLastLogin() {
+        return lastLogin;
+    }
+
+    public void setLastLogin(long lastLogin) {
+        this.lastLogin = lastLogin;
     }
 
     @Override
