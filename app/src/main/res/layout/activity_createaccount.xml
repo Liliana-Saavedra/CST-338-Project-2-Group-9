@@ -68,12 +68,13 @@
 
     <Button
         android:id="@+id/createAccountButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
         android:layout_marginTop="28dp"
-        android:text="@string/create_account"
-        android:fontFamily="casual"
         android:backgroundTint="@android:color/holo_green_dark"
+        android:fontFamily="casual"
+        android:text="@string/create_account"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/verifyPasswordEditText" />
