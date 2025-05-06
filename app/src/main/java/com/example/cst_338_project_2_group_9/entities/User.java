@@ -13,10 +13,10 @@ import java.util.Objects;
         private String password;
         private boolean isAdmin;
 
-    public User(String password, String username) {
+    public User(String password, String username, boolean isAdmin) {
         this.password = password;
         this.username = username;
-        isAdmin = false;
+        this.isAdmin = isAdmin;
     }
 
     public int getId() {
