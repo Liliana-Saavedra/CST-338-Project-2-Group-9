@@ -37,7 +37,9 @@ public class AdminLandingPage extends AppCompatActivity {
         binding.homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(PlantMaintenanceActivity.intentFactory(getApplicationContext()));
+                Intent intent = new Intent(PlantMaintenanceActivity.intentFactory(getApplicationContext()));
+                intent.putExtra("isAdmin", true);
+                startActivity(intent);
             }
         });
 

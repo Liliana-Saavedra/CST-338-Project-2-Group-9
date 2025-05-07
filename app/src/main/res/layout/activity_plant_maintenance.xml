@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:gravity="center"
-        android:text="Plant Maintenance Tasks"
+        android:fontFamily="casual"
+        android:text="@string/plant_maintenance_tasks"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,10 +38,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:layout_marginBottom="108dp"
-        android:text="View Plant Details"
+        android:text="@string/view_plant_details"
+        android:backgroundTint="@android:color/holo_green_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="casual"
         app:layout_constraintTop_toBottomOf="@+id/tasksRecyclerView"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -50,10 +53,32 @@
         android:layout_height="75dp"
         android:layout_margin="16dp"
         android:layout_marginBottom="140dp"
-        android:text="Add New Task"
+        android:text="@string/add_new_task"
         android:textSize="24sp"
+        android:visibility="visible"
+        android:backgroundTint="@android:color/holo_green_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="casual"
         app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/adminButton"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="108dp"
+        android:text="@string/admin"
+        android:backgroundTint="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="casual"
+        app:layout_constraintTop_toBottomOf="@+id/tasksRecyclerView"
+        app:layout_constraintVertical_bias="0.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

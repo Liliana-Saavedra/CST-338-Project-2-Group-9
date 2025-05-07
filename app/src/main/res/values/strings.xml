@@ -63,5 +63,12 @@
     <string name="admin_password">Admin Password</string>
     <string name="admin_username">Admin Username</string>
     <string name="remove">Remove</string>
+    <string name="admin_plant_maintenance_tasks">Plant Maintenance Tasks</string>
+    <string name="admin_view_plant_details">View Plant Details</string>
+    <string name="admin_add_new_task">Add New Task</string>
+    <string name="admin">Admin</string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="view_plant_details">View Plant Details</string>
+    <string name="plant_maintenance_tasks">Plant Maintenance Tasks</string>
 
 </resources>

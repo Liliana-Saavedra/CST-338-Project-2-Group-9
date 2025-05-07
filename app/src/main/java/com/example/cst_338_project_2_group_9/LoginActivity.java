@@ -6,11 +6,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
 
 import android.content.Context;
 
-import com.example.cst_338_project_2_group_9.Database.UserDAO;
 import com.example.cst_338_project_2_group_9.entities.User;
 import com.example.cst_338_project_2_group_9.databinding.ActivityLoginBinding;
 import com.example.cst_338_project_2_group_9.typeConverters.AppDatabase;
@@ -38,6 +36,13 @@ public class LoginActivity extends AppCompatActivity {
             }
 
         });
+
+        binding.SignUpbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(CreateAccountActivity.createAccountIntentFactory(getApplicationContext()));
+            }
+        });
     }
 
     private void verifyUser() {
@@ -58,7 +63,9 @@ public class LoginActivity extends AppCompatActivity {
                                 .putString("username", user.getUsername())
                                 .apply();
                         if (user.isAdmin()) {
-                            startActivity(AdminLandingPage.AdminLandingPageIntentFactory(getApplicationContext()));
+                            Intent intent = new Intent(PlantMaintenanceActivity.intentFactory(getApplicationContext()));
+                            intent.putExtra("isAdmin", true);
+                            startActivity(intent);
                         } else {
                             startActivity(PlantMaintenanceActivity.intentFactory(getApplicationContext()));
                         }
