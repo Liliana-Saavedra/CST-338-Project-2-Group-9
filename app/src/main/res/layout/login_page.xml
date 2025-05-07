@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:text="@string/Login"
+        android:text="@string/login"
         android:textAlignment="center"
         android:textColor="#925624"
         android:textSize="50sp"
