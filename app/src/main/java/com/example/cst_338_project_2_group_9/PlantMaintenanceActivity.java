@@ -15,8 +15,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cst_338_project_2_group_9.Database.MaintenanceRepository;
 import com.example.cst_338_project_2_group_9.entities.MaintenanceTask;
+
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class PlantMaintenanceActivity extends AppCompatActivity {
     private RecyclerView tasksRecyclerView;
@@ -25,11 +26,28 @@ public class PlantMaintenanceActivity extends AppCompatActivity {
     private MaintenanceRepository repository;
     private int currentPlantId; // You'll need to get this from Intent
 
+    boolean isAdmin;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plant_maintenance);
         currentPlantId = getIntent().getIntExtra("PLANT_ID", -1);
+
+        isAdmin = getIntent().getBooleanExtra("isAdmin", false);
+        Button adminButton = findViewById(R.id.adminButton);
+
+        if(isAdmin){
+            adminButton.setVisibility(View.VISIBLE);
+        }
+        else{
+            adminButton.setVisibility(View.GONE);
+        }
+        adminButton.setOnClickListener(v -> {
+            startActivity(AdminLandingPage.AdminLandingPageIntentFactory(getApplicationContext()));
+        });
 
         // Set up the "View Details" button
         Button viewDetailsButton = findViewById(R.id.viewDetailsButton);
@@ -43,8 +61,6 @@ public class PlantMaintenanceActivity extends AppCompatActivity {
             // Start the activity
             startActivity(intent);
         });
-
-
 
         // Get plant ID from intent
         currentPlantId = getIntent().getIntExtra("PLANT_ID", -1);
@@ -68,6 +84,7 @@ public class PlantMaintenanceActivity extends AppCompatActivity {
         addTaskButton.setOnClickListener(v -> {
             showAddTaskDialog();
         });
+
     }
 
     private void showAddTaskDialog() {
