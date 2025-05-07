@@ -14,5 +14,10 @@
     <string name="password">password</string>
     <string name="username">username</string>
     <string name="welcome_login">Welcome Login</string>
+    <string name="Login">login</string>
+    <string name="Loginn">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="back_to_homepage">Back to Homepage</string>
+    <string name="create_new_account">Create Account</string>
 
 </resources>
