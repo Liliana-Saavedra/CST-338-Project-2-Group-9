@@ -12,7 +12,6 @@ import com.example.cst_338_project_2_group_9.databinding.ActivityCreateaccountBi
 import com.example.cst_338_project_2_group_9.entities.User;
 import com.example.cst_338_project_2_group_9.typeConverters.AppDatabase;
 
-import java.util.List;
 
 public class CreateAccountActivity extends AppCompatActivity {
 
@@ -32,6 +31,13 @@ public class CreateAccountActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 createAccount();
+            }
+        });
+
+        binding.backHomeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(MainActivity.MainActivityIntentFactory(getApplicationContext(), 1));
             }
         });
     }

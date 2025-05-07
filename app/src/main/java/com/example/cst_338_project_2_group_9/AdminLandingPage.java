@@ -65,7 +65,11 @@ public class AdminLandingPage extends AppCompatActivity {
         new Thread(() -> {
             User admin1 = db.userDAO().getUserByUsername(adminUser);
             if(adminPw.equals(admin1.getPassword())) {
+                getSharedPreferences("my_prefs", MODE_PRIVATE).edit()
+                        .putString("username", admin1.getUsername())
+                        .apply();
                 db.userDAO().deleteUser(db.userDAO().getUserByUsername(userToRemove));
+                finish();
             }
             else{
                 toastMaker("Invalid Login");

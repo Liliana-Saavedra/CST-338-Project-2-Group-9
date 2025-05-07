@@ -48,9 +48,6 @@ import java.util.Objects;
         return isAdmin;
     }
 
-    public void setAdmin(boolean admin) {
-        isAdmin = admin;
-    }
 
     public long getLastLogin() {
         return lastLogin;
@@ -59,6 +56,8 @@ import java.util.Objects;
     public void setLastLogin(long lastLogin) {
         this.lastLogin = lastLogin;
     }
+
+
 
     @Override
     public boolean equals(Object o) {

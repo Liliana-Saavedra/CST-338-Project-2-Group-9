@@ -16,9 +16,9 @@
     <string name="welcome_login">Welcome Login</string>
     <string name="Login">login</string>
     <string name="Loginn">Login</string>
-    <string name="create_account">Create Account</string>
+    <string name="create_account1">Create Account</string>
     <string name="back_to_homepage">Back to Homepage</string>
-    <string name="create_new_account">Create Account</string>
+    <string name="create_new_account1">Create Account</string>
 
     <string name="succulent_care">
     <b>Succulent Care Guide:</b>\n\n
@@ -70,5 +70,7 @@
     <string name="add_new_task">Add New Task</string>
     <string name="view_plant_details">View Plant Details</string>
     <string name="plant_maintenance_tasks">Plant Maintenance Tasks</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="back_to_maintenance">Back to Maintenance</string>
 
 </resources>
