@@ -1,21 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#C7D99C"
+    >
 
     <TextView
         android:id="@+id/CATitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:text="Create Account"
+        android:text="@string/create_account"
         android:textAlignment="center"
         android:textColor="#925624"
         android:textSize="50sp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="47dp" />
+        app:layout_constraintBottom_toTopOf="@id/NewUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    />
+    <TextView
+        android:id="@+id/NewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="@string/username"
+        android:textAlignment="center"
+        android:textColor="#925624"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/enterNewUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CATitle" />
+
+    <EditText
+        android:id="@+id/enterNewUser"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/newPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewUsername" />
+
+    <TextView
+        android:id="@+id/newPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="@string/password"
+        android:textAlignment="center"
+        android:textColor="#925624"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/enterNewPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterNewUser" />
+
+    <EditText
+        android:id="@+id/enterNewPassword"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/createAccountButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newPassword" />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="200dp"
+        android:layout_height="100sp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:fontFamily="casual"
+        android:text="@string/create_new_account"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/HomeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterNewPassword" />
+
+    <Button
+        android:id="@+id/HomeButton"
+        android:layout_width="150dp"
+        android:layout_height="75sp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:fontFamily="casual"
+        android:text="@string/back_to_homepage"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
