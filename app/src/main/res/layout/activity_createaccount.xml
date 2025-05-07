@@ -15,7 +15,8 @@
         android:layout_marginTop="40dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/create_user_id"
+        android:hint="@string/create_user_id"
+        android:fontFamily="casual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,8 +29,8 @@
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="text"
-
-        android:text="@string/create_password"
+        android:hint="@string/create_password"
+        android:fontFamily="casual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +44,8 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/veriy_password"
+        android:hint="@string/verify_password"
+        android:fontFamily="casual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,6 +54,8 @@
 
     <TextView
         android:id="@+id/textView"
+        android:textColor="#925624"
+        android:fontFamily="casual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
@@ -63,11 +67,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/createAccButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/createAccountButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
         android:layout_marginTop="28dp"
-        android:text="Create Account"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:fontFamily="casual"
+        android:text="@string/create_account"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/verifyPasswordEditText" />

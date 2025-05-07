@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.createAccButton.setOnClickListener(v -> {
-            Toast.makeText(this, "Create account clicked", Toast.LENGTH_SHORT).show();
+            startActivity(CreateAccountActivity.createAccountIntentFactory(getApplicationContext()));
+            finish();
         });
     }
 
