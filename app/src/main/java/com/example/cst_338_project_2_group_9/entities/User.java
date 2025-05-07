@@ -48,6 +48,8 @@ import java.util.Objects;
         return isAdmin;
     }
 
+    public void setAdmin(boolean setAdmin){ this.isAdmin = setAdmin;}
+
 
     public long getLastLogin() {
         return lastLogin;
