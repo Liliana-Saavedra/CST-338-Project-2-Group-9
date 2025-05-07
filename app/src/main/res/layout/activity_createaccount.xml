@@ -78,4 +78,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/verifyPasswordEditText" />
+
+    <Button
+        android:id="@+id/backHomeButton"
+        android:layout_width="253dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:fontFamily="casual"
+        android:text="@string/back_to_home"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
